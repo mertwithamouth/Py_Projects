@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0f169e664e7a43e3b0f8c7c6237d4a75 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0f169e664e7a43e3b0f8c7c6237d4a75" ></div>
+        
+</body>
+<script>    
+    
+            var map_0f169e664e7a43e3b0f8c7c6237d4a75 = L.map(
+                "map_0f169e664e7a43e3b0f8c7c6237d4a75",
+                {
+                    center: [40.76, -73.98],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5559c0e46dcc4b72a6b3f2d0cdaca497 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0f169e664e7a43e3b0f8c7c6237d4a75);
+        
+    
+            var feature_group_ff51d5a6b2de463e9e03c9ff7b322edf = L.featureGroup(
+                {}
+            ).addTo(map_0f169e664e7a43e3b0f8c7c6237d4a75);
+        
+    
+            var circle_marker_c430a6ee2af944c9929947235f3dcc6a = L.circleMarker(
+                [48.7767982, -121.810997],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_a3c5cd38831b4988a0d5b0083443506d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf7e950b6c8e4ee6976f5e79562cacb2 = $(`<div id="html_cf7e950b6c8e4ee6976f5e79562cacb2" style="width: 100.0%; height: 100.0%;">Name= Baker   Status= Historical</div>`)[0];
+            popup_a3c5cd38831b4988a0d5b0083443506d.setContent(html_cf7e950b6c8e4ee6976f5e79562cacb2);
+        
+
+        circle_marker_c430a6ee2af944c9929947235f3dcc6a.bindPopup(popup_a3c5cd38831b4988a0d5b0083443506d)
+        ;
+
+        
+    
+    
+            var circle_marker_41efed29ba0e4ac69ad5d1a86748383f = L.circleMarker(
+                [48.1118011, -121.1110001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_4746379302e841a2805c013943742835 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85c55b9c684340acb14cc50c2910a924 = $(`<div id="html_85c55b9c684340acb14cc50c2910a924" style="width: 100.0%; height: 100.0%;">Name= Glacier Peak   Status= Tephrochronology</div>`)[0];
+            popup_4746379302e841a2805c013943742835.setContent(html_85c55b9c684340acb14cc50c2910a924);
+        
+
+        circle_marker_41efed29ba0e4ac69ad5d1a86748383f.bindPopup(popup_4746379302e841a2805c013943742835)
+        ;
+
+        
+    
+    
+            var circle_marker_7e361e9b885e48b79b9c8735c4222cff = L.circleMarker(
+                [46.8698006, -121.7509995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_d0b1d76af24e48719e80487f4c89db50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d0bb6a483234eb1a09661794d6fe28f = $(`<div id="html_5d0bb6a483234eb1a09661794d6fe28f" style="width: 100.0%; height: 100.0%;">Name= Rainier   Status= Dendrochronology</div>`)[0];
+            popup_d0b1d76af24e48719e80487f4c89db50.setContent(html_5d0bb6a483234eb1a09661794d6fe28f);
+        
+
+        circle_marker_7e361e9b885e48b79b9c8735c4222cff.bindPopup(popup_d0b1d76af24e48719e80487f4c89db50)
+        ;
+
+        
+    
+    
+            var circle_marker_f06714bcb09c4aa1810e4986c7649a8d = L.circleMarker(
+                [46.1997986, -122.1809998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_aff456525ada4dfcb3179afd00f2f561 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad5a8b5534794d8e830ee17eddf845c8 = $(`<div id="html_ad5a8b5534794d8e830ee17eddf845c8" style="width: 100.0%; height: 100.0%;">Name= St. Helens   Status= Historical</div>`)[0];
+            popup_aff456525ada4dfcb3179afd00f2f561.setContent(html_ad5a8b5534794d8e830ee17eddf845c8);
+        
+
+        circle_marker_f06714bcb09c4aa1810e4986c7649a8d.bindPopup(popup_aff456525ada4dfcb3179afd00f2f561)
+        ;
+
+        
+    
+    
+            var circle_marker_e2f69c12544544d5b9f3a939202a6e8f = L.circleMarker(
+                [46.2057991, -121.4909973],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_e57446ef5a2a44f38394d5e1acec9248 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf3ddc1935c24b4298299566172dbd84 = $(`<div id="html_cf3ddc1935c24b4298299566172dbd84" style="width: 100.0%; height: 100.0%;">Name= Adams   Status= Tephrochronology</div>`)[0];
+            popup_e57446ef5a2a44f38394d5e1acec9248.setContent(html_cf3ddc1935c24b4298299566172dbd84);
+        
+
+        circle_marker_e2f69c12544544d5b9f3a939202a6e8f.bindPopup(popup_e57446ef5a2a44f38394d5e1acec9248)
+        ;
+
+        
+    
+    
+            var circle_marker_8f2290c0c38c402c809fe77ec03d8385 = L.circleMarker(
+                [45.8797989, -122.0810013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_5aa0efc0f6c44342b17c3620a33b7cc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_221a82bb24b94195bb4da40e0b1834b2 = $(`<div id="html_221a82bb24b94195bb4da40e0b1834b2" style="width: 100.0%; height: 100.0%;">Name= West Crater   Status= Radiocarbon</div>`)[0];
+            popup_5aa0efc0f6c44342b17c3620a33b7cc0.setContent(html_221a82bb24b94195bb4da40e0b1834b2);
+        
+
+        circle_marker_8f2290c0c38c402c809fe77ec03d8385.bindPopup(popup_5aa0efc0f6c44342b17c3620a33b7cc0)
+        ;
+
+        
+    
+    
+            var circle_marker_c5e060a2fde344d88ec540202a4d488c = L.circleMarker(
+                [45.9297981, -121.8209991],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_5fff7338a0e34477a824f4d9dac3f4ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5885ef93221b4a9dacba94809a4617d9 = $(`<div id="html_5885ef93221b4a9dacba94809a4617d9" style="width: 100.0%; height: 100.0%;">Name= Indian Heaven   Status= Radiocarbon</div>`)[0];
+            popup_5fff7338a0e34477a824f4d9dac3f4ea.setContent(html_5885ef93221b4a9dacba94809a4617d9);
+        
+
+        circle_marker_c5e060a2fde344d88ec540202a4d488c.bindPopup(popup_5fff7338a0e34477a824f4d9dac3f4ea)
+        ;
+
+        
+    
+    
+            var circle_marker_7097a4aff12046dc8d85a63d5d7f4891 = L.circleMarker(
+                [45.3737984, -121.6910019],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_b1788e2a5ba54c38bb13627b73da4ad4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bca0d3029f34846a80b71ac6aa393a5 = $(`<div id="html_8bca0d3029f34846a80b71ac6aa393a5" style="width: 100.0%; height: 100.0%;">Name= Hood   Status= Historical</div>`)[0];
+            popup_b1788e2a5ba54c38bb13627b73da4ad4.setContent(html_8bca0d3029f34846a80b71ac6aa393a5);
+        
+
+        circle_marker_7097a4aff12046dc8d85a63d5d7f4891.bindPopup(popup_b1788e2a5ba54c38bb13627b73da4ad4)
+        ;
+
+        
+    
+    
+            var circle_marker_dde17c7795ca4d38a0009c18335399d8 = L.circleMarker(
+                [44.6917992, -121.8010025],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_5e61fbf48ecd4c8db22bef4b2a28b550 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25e3cb973a5b4b878f64af2d78f13910 = $(`<div id="html_25e3cb973a5b4b878f64af2d78f13910" style="width: 100.0%; height: 100.0%;">Name= Jefferson   Status= Varve Count</div>`)[0];
+            popup_5e61fbf48ecd4c8db22bef4b2a28b550.setContent(html_25e3cb973a5b4b878f64af2d78f13910);
+        
+
+        circle_marker_dde17c7795ca4d38a0009c18335399d8.bindPopup(popup_5e61fbf48ecd4c8db22bef4b2a28b550)
+        ;
+
+        
+    
+    
+            var circle_marker_7d06ee486aaa4b4986923ec07972e139 = L.circleMarker(
+                [44.4197998, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_028dfc9884604b08a93a0dcdcc201aa0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c0e03e7a0434fcfb12a5de7f84dc362 = $(`<div id="html_5c0e03e7a0434fcfb12a5de7f84dc362" style="width: 100.0%; height: 100.0%;">Name= Blue Lake Crater   Status= Radiocarbon</div>`)[0];
+            popup_028dfc9884604b08a93a0dcdcc201aa0.setContent(html_5c0e03e7a0434fcfb12a5de7f84dc362);
+        
+
+        circle_marker_7d06ee486aaa4b4986923ec07972e139.bindPopup(popup_028dfc9884604b08a93a0dcdcc201aa0)
+        ;
+
+        
+    
+    
+            var circle_marker_fb1709c8e1794e3ebab9b271c7feebd1 = L.circleMarker(
+                [44.3797989, -121.9309998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_8f9327ec92614cffb82a628a918d0f31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cc7419d0ebe405b82622224cd7e999d = $(`<div id="html_1cc7419d0ebe405b82622224cd7e999d" style="width: 100.0%; height: 100.0%;">Name= Sand Mountain Field   Status= Radiocarbon</div>`)[0];
+            popup_8f9327ec92614cffb82a628a918d0f31.setContent(html_1cc7419d0ebe405b82622224cd7e999d);
+        
+
+        circle_marker_fb1709c8e1794e3ebab9b271c7feebd1.bindPopup(popup_8f9327ec92614cffb82a628a918d0f31)
+        ;
+
+        
+    
+    
+            var circle_marker_5ee4446e153b48ba9082149ea7507df7 = L.circleMarker(
+                [44.3317986, -121.8310013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_df75992066b142ba9c15b5976ed241ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_721dc4ce90f64b8fa3b6e15197294d31 = $(`<div id="html_721dc4ce90f64b8fa3b6e15197294d31" style="width: 100.0%; height: 100.0%;">Name= Washington   Status= Radiocarbon</div>`)[0];
+            popup_df75992066b142ba9c15b5976ed241ba.setContent(html_721dc4ce90f64b8fa3b6e15197294d31);
+        
+
+        circle_marker_5ee4446e153b48ba9082149ea7507df7.bindPopup(popup_df75992066b142ba9c15b5976ed241ba)
+        ;
+
+        
+    
+    
+            var circle_marker_be20dfc6fec9483988bb754a9e5ff07f = L.circleMarker(
+                [44.2848015, -121.8410034],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_1ef8f7f5fbff4587bfe6a3d9dab999e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f415bd0551b84a12bde55732f88b6fa7 = $(`<div id="html_f415bd0551b84a12bde55732f88b6fa7" style="width: 100.0%; height: 100.0%;">Name= Belknap   Status= Radiocarbon</div>`)[0];
+            popup_1ef8f7f5fbff4587bfe6a3d9dab999e7.setContent(html_f415bd0551b84a12bde55732f88b6fa7);
+        
+
+        circle_marker_be20dfc6fec9483988bb754a9e5ff07f.bindPopup(popup_1ef8f7f5fbff4587bfe6a3d9dab999e7)
+        ;
+
+        
+    
+    
+            var circle_marker_a50077944d914f52a7d48ba1c8ee1565 = L.circleMarker(
+                [44.1697998, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_ca08c9dd86f046d3878fd449e7ec5e6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcf81d5490464c35b54774bf8f20bc79 = $(`<div id="html_bcf81d5490464c35b54774bf8f20bc79" style="width: 100.0%; height: 100.0%;">Name= North Sister Field   Status= Radiocarbon</div>`)[0];
+            popup_ca08c9dd86f046d3878fd449e7ec5e6f.setContent(html_bcf81d5490464c35b54774bf8f20bc79);
+        
+
+        circle_marker_a50077944d914f52a7d48ba1c8ee1565.bindPopup(popup_ca08c9dd86f046d3878fd449e7ec5e6f)
+        ;
+
+        
+    
+    
+            var circle_marker_e1ad67a50b674762a04ad4f2a0fc52e2 = L.circleMarker(
+                [44.0998001, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_6b948b7ddb6c4ee79a26d73a4efcaad5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1f8289f700d4aefb05b1976ffa5468b = $(`<div id="html_c1f8289f700d4aefb05b1976ffa5468b" style="width: 100.0%; height: 100.0%;">Name= South Sister   Status= Radiocarbon</div>`)[0];
+            popup_6b948b7ddb6c4ee79a26d73a4efcaad5.setContent(html_c1f8289f700d4aefb05b1976ffa5468b);
+        
+
+        circle_marker_e1ad67a50b674762a04ad4f2a0fc52e2.bindPopup(popup_6b948b7ddb6c4ee79a26d73a4efcaad5)
+        ;
+
+        
+    
+    
+            var circle_marker_c25c7a618e604f22ba828d9110654b90 = L.circleMarker(
+                [43.9788017, -121.6809998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_4e659418e85d44068847189b5e39cc5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b105aa0c7a34d02bd42538e6f887233 = $(`<div id="html_2b105aa0c7a34d02bd42538e6f887233" style="width: 100.0%; height: 100.0%;">Name= Bachelor   Status= Tephrochronology</div>`)[0];
+            popup_4e659418e85d44068847189b5e39cc5d.setContent(html_2b105aa0c7a34d02bd42538e6f887233);
+        
+
+        circle_marker_c25c7a618e604f22ba828d9110654b90.bindPopup(popup_4e659418e85d44068847189b5e39cc5d)
+        ;
+
+        
+    
+    
+            var circle_marker_1f1c19a7f31b45a9aa70750777c559e6 = L.circleMarker(
+                [43.7218018, -121.2210007],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_96cad0bfc551455da2fe34d589142ae8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8ac36258c644cc08ae3abe0ca0a2499 = $(`<div id="html_a8ac36258c644cc08ae3abe0ca0a2499" style="width: 100.0%; height: 100.0%;">Name= Newberry Volcano   Status= Radiocarbon</div>`)[0];
+            popup_96cad0bfc551455da2fe34d589142ae8.setContent(html_a8ac36258c644cc08ae3abe0ca0a2499);
+        
+
+        circle_marker_1f1c19a7f31b45a9aa70750777c559e6.bindPopup(popup_96cad0bfc551455da2fe34d589142ae8)
+        ;
+
+        
+    
+    
+            var circle_marker_d365674927d54a489ac7c3a2e2795b42 = L.circleMarker(
+                [43.5698013, -121.8209991],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_9b89ae5c505a4030aefc07d930409bbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f10151b47d434e7ebfed48e5f6072b7d = $(`<div id="html_f10151b47d434e7ebfed48e5f6072b7d" style="width: 100.0%; height: 100.0%;">Name= Davis Lake   Status= Radiocarbon</div>`)[0];
+            popup_9b89ae5c505a4030aefc07d930409bbc.setContent(html_f10151b47d434e7ebfed48e5f6072b7d);
+        
+
+        circle_marker_d365674927d54a489ac7c3a2e2795b42.bindPopup(popup_9b89ae5c505a4030aefc07d930409bbc)
+        ;
+
+        
+    
+    
+            var circle_marker_af8b7089f2ef4897b6f790ae39be9d4c = L.circleMarker(
+                [43.5119019, -120.8610001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_6263358447344ac696f7f2629a8a5c5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8515471f8eb49dc8cf65b929d45bf69 = $(`<div id="html_f8515471f8eb49dc8cf65b929d45bf69" style="width: 100.0%; height: 100.0%;">Name= Devils Garden   Status= Holocene?</div>`)[0];
+            popup_6263358447344ac696f7f2629a8a5c5a.setContent(html_f8515471f8eb49dc8cf65b929d45bf69);
+        
+
+        circle_marker_af8b7089f2ef4897b6f790ae39be9d4c.bindPopup(popup_6263358447344ac696f7f2629a8a5c5a)
+        ;
+
+        
+    
+    
+            var circle_marker_78de57f8e0e8451997366924d97866b6 = L.circleMarker(
+                [43.240799, -122.1009979],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_89e7d9442e5f49589bdccccd8736d733 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cc7836b705842d582bfcbcdf44a3b04 = $(`<div id="html_8cc7836b705842d582bfcbcdf44a3b04" style="width: 100.0%; height: 100.0%;">Name= Cinnamon Butte   Status= Holocene?</div>`)[0];
+            popup_89e7d9442e5f49589bdccccd8736d733.setContent(html_8cc7836b705842d582bfcbcdf44a3b04);
+        
+
+        circle_marker_78de57f8e0e8451997366924d97866b6.bindPopup(popup_89e7d9442e5f49589bdccccd8736d733)
+        ;
+
+        
+    
+    
+            var circle_marker_f8fc75507467470e9bda465970962bd0 = L.circleMarker(
+                [43.4719009, -120.7509995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_cd8d36bb3f1846c393c50d54663712dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c854d7e74bce440fbe8ce86c29fd68b2 = $(`<div id="html_c854d7e74bce440fbe8ce86c29fd68b2" style="width: 100.0%; height: 100.0%;">Name= Squaw Ridge Lava Field   Status= Holocene?</div>`)[0];
+            popup_cd8d36bb3f1846c393c50d54663712dd.setContent(html_c854d7e74bce440fbe8ce86c29fd68b2);
+        
+
+        circle_marker_f8fc75507467470e9bda465970962bd0.bindPopup(popup_cd8d36bb3f1846c393c50d54663712dd)
+        ;
+
+        
+    
+    
+            var circle_marker_3fc4eea363254854b13210112bc96493 = L.circleMarker(
+                [43.3609009, -120.6610031],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_37fa5e3ad6164263b6acfe0813a1bbae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9bf7ceac83e42d68ddceb9aa17845ec = $(`<div id="html_a9bf7ceac83e42d68ddceb9aa17845ec" style="width: 100.0%; height: 100.0%;">Name= Four Craters Lava Field   Status= Holocene?</div>`)[0];
+            popup_37fa5e3ad6164263b6acfe0813a1bbae.setContent(html_a9bf7ceac83e42d68ddceb9aa17845ec);
+        
+
+        circle_marker_3fc4eea363254854b13210112bc96493.bindPopup(popup_37fa5e3ad6164263b6acfe0813a1bbae)
+        ;
+
+        
+    
+    
+            var circle_marker_487ea2464bfd4f2ebd89a678ae6c3bda = L.circleMarker(
+                [42.9299011, -122.1210022],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_82c1230c3c13401486459c09151b42bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2ecd851231c452e92729ba567b41763 = $(`<div id="html_c2ecd851231c452e92729ba567b41763" style="width: 100.0%; height: 100.0%;">Name= Crater Lake   Status= Radiocarbon</div>`)[0];
+            popup_82c1230c3c13401486459c09151b42bf.setContent(html_c2ecd851231c452e92729ba567b41763);
+        
+
+        circle_marker_487ea2464bfd4f2ebd89a678ae6c3bda.bindPopup(popup_82c1230c3c13401486459c09151b42bf)
+        ;
+
+        
+    
+    
+            var circle_marker_c2600c1aca044032b3be14053d26e13d = L.circleMarker(
+                [44.4299011, -110.6709976],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_7a90784491ea4a17ab5fc2acb776eafd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6045fe4c1c9b4d2795a2145acf18e813 = $(`<div id="html_6045fe4c1c9b4d2795a2145acf18e813" style="width: 100.0%; height: 100.0%;">Name= Yellowstone   Status= Tephrochronology</div>`)[0];
+            popup_7a90784491ea4a17ab5fc2acb776eafd.setContent(html_6045fe4c1c9b4d2795a2145acf18e813);
+        
+
+        circle_marker_c2600c1aca044032b3be14053d26e13d.bindPopup(popup_7a90784491ea4a17ab5fc2acb776eafd)
+        ;
+
+        
+    
+    
+            var circle_marker_ffe9bddd065d4b50bfb0208d8f21eb73 = L.circleMarker(
+                [43.0998993, -118.7509995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_0bb0ab10c09447cd8e7d4bad794bf9f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c505e011c874b44b2cb45796ba3ffcc = $(`<div id="html_1c505e011c874b44b2cb45796ba3ffcc" style="width: 100.0%; height: 100.0%;">Name= Diamond Craters   Status= Holocene?</div>`)[0];
+            popup_0bb0ab10c09447cd8e7d4bad794bf9f3.setContent(html_1c505e011c874b44b2cb45796ba3ffcc);
+        
+
+        circle_marker_ffe9bddd065d4b50bfb0208d8f21eb73.bindPopup(popup_0bb0ab10c09447cd8e7d4bad794bf9f3)
+        ;
+
+        
+    
+    
+            var circle_marker_57a2ebcebc7c4a029b9ea79f58ed8e14 = L.circleMarker(
+                [43.1498985, -117.4710007],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_bee855bddaf3402fb8cc49c8818e7a48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_459fc4fa25ec45b899c1ba16ab305ff5 = $(`<div id="html_459fc4fa25ec45b899c1ba16ab305ff5" style="width: 100.0%; height: 100.0%;">Name= Jordan Craters   Status= Radiocarbon</div>`)[0];
+            popup_bee855bddaf3402fb8cc49c8818e7a48.setContent(html_459fc4fa25ec45b899c1ba16ab305ff5);
+        
+
+        circle_marker_57a2ebcebc7c4a029b9ea79f58ed8e14.bindPopup(popup_bee855bddaf3402fb8cc49c8818e7a48)
+        ;
+
+        
+    
+    
+            var circle_marker_fc493eaba6f642a1a7ea51fb932d46e5 = L.circleMarker(
+                [42.9999008, -117.8010025],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_9e34dc62c362443d830e3f7031cdd247 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b535bcf5d0545dc9a54496ae29dc9bd = $(`<div id="html_4b535bcf5d0545dc9a54496ae29dc9bd" style="width: 100.0%; height: 100.0%;">Name= Saddle Butte   Status= Holocene?</div>`)[0];
+            popup_9e34dc62c362443d830e3f7031cdd247.setContent(html_4b535bcf5d0545dc9a54496ae29dc9bd);
+        
+
+        circle_marker_fc493eaba6f642a1a7ea51fb932d46e5.bindPopup(popup_9e34dc62c362443d830e3f7031cdd247)
+        ;
+
+        
+    
+    
+            var circle_marker_5fb661004e1943d4870fdacfab5db43a = L.circleMarker(
+                [43.419899, -113.5009995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_3f573b6b0fb84a8c8b17e77ec517278f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99a3cbff3e074c51b5ae8c66e790a588 = $(`<div id="html_99a3cbff3e074c51b5ae8c66e790a588" style="width: 100.0%; height: 100.0%;">Name= Craters of the Moon   Status= Radiocarbon</div>`)[0];
+            popup_3f573b6b0fb84a8c8b17e77ec517278f.setContent(html_99a3cbff3e074c51b5ae8c66e790a588);
+        
+
+        circle_marker_5fb661004e1943d4870fdacfab5db43a.bindPopup(popup_3f573b6b0fb84a8c8b17e77ec517278f)
+        ;
+
+        
+    
+    
+            var circle_marker_76f2478f02ab47b1b250bcf5d0dc7511 = L.circleMarker(
+                [43.4999008, -112.4509964],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_510eeea20b9c4232a64fd2ebf2b709e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21ab61ccfd1644bb86eb23ed0a694d5c = $(`<div id="html_21ab61ccfd1644bb86eb23ed0a694d5c" style="width: 100.0%; height: 100.0%;">Name= Hell Half Acre   Status= Radiocarbon</div>`)[0];
+            popup_510eeea20b9c4232a64fd2ebf2b709e0.setContent(html_21ab61ccfd1644bb86eb23ed0a694d5c);
+        
+
+        circle_marker_76f2478f02ab47b1b250bcf5d0dc7511.bindPopup(popup_510eeea20b9c4232a64fd2ebf2b709e0)
+        ;
+
+        
+    
+    
+            var circle_marker_04d11a5f7a264a039c70865f12f5cd67 = L.circleMarker(
+                [43.1799011, -114.3509979],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_91b31c6295a04d34ba39d73f576cccee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89552e85a60b46b5b053393ab4b7b8c5 = $(`<div id="html_89552e85a60b46b5b053393ab4b7b8c5" style="width: 100.0%; height: 100.0%;">Name= Shoshone Lava Field   Status= Holocene</div>`)[0];
+            popup_91b31c6295a04d34ba39d73f576cccee.setContent(html_89552e85a60b46b5b053393ab4b7b8c5);
+        
+
+        circle_marker_04d11a5f7a264a039c70865f12f5cd67.bindPopup(popup_91b31c6295a04d34ba39d73f576cccee)
+        ;
+
+        
+    
+    
+            var circle_marker_71954fc54ebe468f91f84a2a924f5312 = L.circleMarker(
+                [42.6058998, -117.5810013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_9cffc26ab9814f18b90101cd34d34c9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2909d46e74d4a45ae4bc03a49b26195 = $(`<div id="html_d2909d46e74d4a45ae4bc03a49b26195" style="width: 100.0%; height: 100.0%;">Name= Jackies Butte   Status= Holocene?</div>`)[0];
+            popup_9cffc26ab9814f18b90101cd34d34c9b.setContent(html_d2909d46e74d4a45ae4bc03a49b26195);
+        
+
+        circle_marker_71954fc54ebe468f91f84a2a924f5312.bindPopup(popup_9cffc26ab9814f18b90101cd34d34c9b)
+        ;
+
+        
+    
+    
+            var circle_marker_cfa70e20f2994d378524343cc8218533 = L.circleMarker(
+                [41.5798988, -121.5709991],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_1f9d05ef31fa4debb1b46fba6fcf7639 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36f08ce257fc44debb8d467e3ed93cbd = $(`<div id="html_36f08ce257fc44debb8d467e3ed93cbd" style="width: 100.0%; height: 100.0%;">Name= Medicine Lake   Status= Radiocarbon</div>`)[0];
+            popup_1f9d05ef31fa4debb1b46fba6fcf7639.setContent(html_36f08ce257fc44debb8d467e3ed93cbd);
+        
+
+        circle_marker_cfa70e20f2994d378524343cc8218533.bindPopup(popup_1f9d05ef31fa4debb1b46fba6fcf7639)
+        ;
+
+        
+    
+    
+            var circle_marker_7762870490774c86ad6466f9f07ee0a3 = L.circleMarker(
+                [42.8799019, -113.2210007],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_4776a2b7d0f0465ba14e875712c989b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baddb4969cdb432cb3de9513348a6b3b = $(`<div id="html_baddb4969cdb432cb3de9513348a6b3b" style="width: 100.0%; height: 100.0%;">Name= Wapi Lava Field   Status= Radiocarbon</div>`)[0];
+            popup_4776a2b7d0f0465ba14e875712c989b5.setContent(html_baddb4969cdb432cb3de9513348a6b3b);
+        
+
+        circle_marker_7762870490774c86ad6466f9f07ee0a3.bindPopup(popup_4776a2b7d0f0465ba14e875712c989b5)
+        ;
+
+        
+    
+    
+            var circle_marker_d58356d9c19745c7b772d62ebfbf3e47 = L.circleMarker(
+                [41.419899, -122.2009964],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_3b7f8d4a9c4a49d081925c7d19874919 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bc83989f7e44610bb653f687f8ec92b = $(`<div id="html_3bc83989f7e44610bb653f687f8ec92b" style="width: 100.0%; height: 100.0%;">Name= Shasta   Status= Historical</div>`)[0];
+            popup_3b7f8d4a9c4a49d081925c7d19874919.setContent(html_3bc83989f7e44610bb653f687f8ec92b);
+        
+
+        circle_marker_d58356d9c19745c7b772d62ebfbf3e47.bindPopup(popup_3b7f8d4a9c4a49d081925c7d19874919)
+        ;
+
+        
+    
+    
+            var circle_marker_f634ba1945274864b746e5eec11341f7 = L.circleMarker(
+                [41.1778984, -121.4410019],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_7815143adee541979e5456a7645876ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f56dd9f479af457a9df462735e9cf6c4 = $(`<div id="html_f56dd9f479af457a9df462735e9cf6c4" style="width: 100.0%; height: 100.0%;">Name= Brushy Butte   Status= Holocene?</div>`)[0];
+            popup_7815143adee541979e5456a7645876ea.setContent(html_f56dd9f479af457a9df462735e9cf6c4);
+        
+
+        circle_marker_f634ba1945274864b746e5eec11341f7.bindPopup(popup_7815143adee541979e5456a7645876ea)
+        ;
+
+        
+    
+    
+            var circle_marker_4e8f7e01fd134de0b188189f79db37d6 = L.circleMarker(
+                [40.9548988, -121.3610001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_c715fa3ab5e44dc68669ad8881aa3a49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fc2b3266d99434cb41d2c63ee44b11c = $(`<div id="html_3fc2b3266d99434cb41d2c63ee44b11c" style="width: 100.0%; height: 100.0%;">Name= Big Cave   Status= Holocene?</div>`)[0];
+            popup_c715fa3ab5e44dc68669ad8881aa3a49.setContent(html_3fc2b3266d99434cb41d2c63ee44b11c);
+        
+
+        circle_marker_4e8f7e01fd134de0b188189f79db37d6.bindPopup(popup_c715fa3ab5e44dc68669ad8881aa3a49)
+        ;
+
+        
+    
+    
+            var circle_marker_137a257fb7334a97868a764edbac633c = L.circleMarker(
+                [40.7798996, -121.6009979],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_b0b97be670234c22953daaf24ce6b9be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a792d6cfe0640a5b71b63d87c967c43 = $(`<div id="html_8a792d6cfe0640a5b71b63d87c967c43" style="width: 100.0%; height: 100.0%;">Name= Twin Buttes   Status= Holocene?</div>`)[0];
+            popup_b0b97be670234c22953daaf24ce6b9be.setContent(html_8a792d6cfe0640a5b71b63d87c967c43);
+        
+
+        circle_marker_137a257fb7334a97868a764edbac633c.bindPopup(popup_b0b97be670234c22953daaf24ce6b9be)
+        ;
+
+        
+    
+    
+            var circle_marker_e545f50ccb04451795197ba70ff3340c = L.circleMarker(
+                [40.6799011, -121.5510025],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_185f312dcb3d4948ab131292d3daa5a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef00c85e13414bb6bc94d120fadf4fee = $(`<div id="html_ef00c85e13414bb6bc94d120fadf4fee" style="width: 100.0%; height: 100.0%;">Name= Tumble Buttes   Status= Holocene?</div>`)[0];
+            popup_185f312dcb3d4948ab131292d3daa5a1.setContent(html_ef00c85e13414bb6bc94d120fadf4fee);
+        
+
+        circle_marker_e545f50ccb04451795197ba70ff3340c.bindPopup(popup_185f312dcb3d4948ab131292d3daa5a1)
+        ;
+
+        
+    
+    
+            var circle_marker_1d1e0aa1ae654cbaacd89fe0371cf196 = L.circleMarker(
+                [40.6299019, -120.8310013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_871274eb038945fd9c2d1bfeb53d53f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3e3a8fd119c4226a03c70e0f57649ff = $(`<div id="html_e3e3a8fd119c4226a03c70e0f57649ff" style="width: 100.0%; height: 100.0%;">Name= Eagle Lake Field   Status= Holocene?</div>`)[0];
+            popup_871274eb038945fd9c2d1bfeb53d53f8.setContent(html_e3e3a8fd119c4226a03c70e0f57649ff);
+        
+
+        circle_marker_1d1e0aa1ae654cbaacd89fe0371cf196.bindPopup(popup_871274eb038945fd9c2d1bfeb53d53f8)
+        ;
+
+        
+    
+    
+            var circle_marker_976a2717a3f04c49a98eb6dc8598a306 = L.circleMarker(
+                [40.4919014, -121.5009995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_924091fc284140ac916c52d71cd317df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ea0aa3e76cd44e5a6ed4b578dde22c3 = $(`<div id="html_2ea0aa3e76cd44e5a6ed4b578dde22c3" style="width: 100.0%; height: 100.0%;">Name= Lassen Volc Center   Status= Historical</div>`)[0];
+            popup_924091fc284140ac916c52d71cd317df.setContent(html_2ea0aa3e76cd44e5a6ed4b578dde22c3);
+        
+
+        circle_marker_976a2717a3f04c49a98eb6dc8598a306.bindPopup(popup_924091fc284140ac916c52d71cd317df)
+        ;
+
+        
+    
+    
+            var circle_marker_f2bf3c75f30940978c54d43be71c5616 = L.circleMarker(
+                [38.9698982, -122.7710037],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_80c0337511774c63afcf0b8c77034149 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03caa6bd64d14236918e4a22ca455b64 = $(`<div id="html_03caa6bd64d14236918e4a22ca455b64" style="width: 100.0%; height: 100.0%;">Name= Clear Lake   Status= Holocene</div>`)[0];
+            popup_80c0337511774c63afcf0b8c77034149.setContent(html_03caa6bd64d14236918e4a22ca455b64);
+        
+
+        circle_marker_f2bf3c75f30940978c54d43be71c5616.bindPopup(popup_80c0337511774c63afcf0b8c77034149)
+        ;
+
+        
+    
+    
+            var circle_marker_245a471c3ace4b11a8eee6db34ff832e = L.circleMarker(
+                [39.3749008, -119.7210007],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_4ca48e13a5db4709beb5b2a373beb0b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84f8d7eebae44242b88b47a0175e7681 = $(`<div id="html_84f8d7eebae44242b88b47a0175e7681" style="width: 100.0%; height: 100.0%;">Name= Steamboat Springs   Status= Pleistocene-Fumarolic</div>`)[0];
+            popup_4ca48e13a5db4709beb5b2a373beb0b0.setContent(html_84f8d7eebae44242b88b47a0175e7681);
+        
+
+        circle_marker_245a471c3ace4b11a8eee6db34ff832e.bindPopup(popup_4ca48e13a5db4709beb5b2a373beb0b0)
+        ;
+
+        
+    
+    
+            var circle_marker_9431acb40ff143d3abc5fc147be0ebdf = L.circleMarker(
+                [39.6500015, -107.0309982],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_e11b31501a48472183660bf2a37a9c9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78ce5d176b59447ba8c172058be4fe51 = $(`<div id="html_78ce5d176b59447ba8c172058be4fe51" style="width: 100.0%; height: 100.0%;">Name= Dotsero   Status= Radiocarbon</div>`)[0];
+            popup_e11b31501a48472183660bf2a37a9c9d.setContent(html_78ce5d176b59447ba8c172058be4fe51);
+        
+
+        circle_marker_9431acb40ff143d3abc5fc147be0ebdf.bindPopup(popup_e11b31501a48472183660bf2a37a9c9d)
+        ;
+
+        
+    
+    
+            var circle_marker_21ffe88f85ac4df8a91df39c9079f9cf = L.circleMarker(
+                [37.9999008, -119.0309982],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_54334e3da68c4d6ab69ee710959d90d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40acee526bca43f5a9a32daecf3b464f = $(`<div id="html_40acee526bca43f5a9a32daecf3b464f" style="width: 100.0%; height: 100.0%;">Name= Mono Lake Volc Field   Status= Tephrochronology</div>`)[0];
+            popup_54334e3da68c4d6ab69ee710959d90d5.setContent(html_40acee526bca43f5a9a32daecf3b464f);
+        
+
+        circle_marker_21ffe88f85ac4df8a91df39c9079f9cf.bindPopup(popup_54334e3da68c4d6ab69ee710959d90d5)
+        ;
+
+        
+    
+    
+            var circle_marker_0425e939dbb44850aaab0d99dc7138ef = L.circleMarker(
+                [38.9700012, -112.5009995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_bd165a7e863f44c6b86470c9796deeb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22a73b3e583d489d8a1a50eb7a3574b2 = $(`<div id="html_22a73b3e583d489d8a1a50eb7a3574b2" style="width: 100.0%; height: 100.0%;">Name= Black Rock Desert   Status= Radiocarbon</div>`)[0];
+            popup_bd165a7e863f44c6b86470c9796deeb1.setContent(html_22a73b3e583d489d8a1a50eb7a3574b2);
+        
+
+        circle_marker_0425e939dbb44850aaab0d99dc7138ef.bindPopup(popup_bd165a7e863f44c6b86470c9796deeb1)
+        ;
+
+        
+    
+    
+            var circle_marker_19868523944f4c56b74b8bcca80a0bf5 = L.circleMarker(
+                [37.8799019, -119.0009995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_5956ee19f46d409f9d42c90842ad6143 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a693954c2be4ce98743b25ac2e2f1c4 = $(`<div id="html_7a693954c2be4ce98743b25ac2e2f1c4" style="width: 100.0%; height: 100.0%;">Name= Mono Craters   Status= Radiocarbon</div>`)[0];
+            popup_5956ee19f46d409f9d42c90842ad6143.setContent(html_7a693954c2be4ce98743b25ac2e2f1c4);
+        
+
+        circle_marker_19868523944f4c56b74b8bcca80a0bf5.bindPopup(popup_5956ee19f46d409f9d42c90842ad6143)
+        ;
+
+        
+    
+    
+            var circle_marker_d847cae0420b4c7b9504629f760ee674 = L.circleMarker(
+                [37.6918983, -119.0210037],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_cc5f7ea610bb43ddb8f72fb809832414 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff4355a294f04304809d5f1e71bd6478 = $(`<div id="html_ff4355a294f04304809d5f1e71bd6478" style="width: 100.0%; height: 100.0%;">Name= Inyo Craters   Status= Radiocarbon</div>`)[0];
+            popup_cc5f7ea610bb43ddb8f72fb809832414.setContent(html_ff4355a294f04304809d5f1e71bd6478);
+        
+
+        circle_marker_d847cae0420b4c7b9504629f760ee674.bindPopup(popup_cc5f7ea610bb43ddb8f72fb809832414)
+        ;
+
+        
+    
+    
+            var circle_marker_0fc3862240d94cc09d4c6e3fa78ba0a6 = L.circleMarker(
+                [37.6999016, -118.8710022],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_f98188f138a74d52afcfe38304dc9062 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_212eb2b2e87d4f499d17537868f685db = $(`<div id="html_212eb2b2e87d4f499d17537868f685db" style="width: 100.0%; height: 100.0%;">Name= Long Valley   Status= Pleistocene-Fumarolic</div>`)[0];
+            popup_f98188f138a74d52afcfe38304dc9062.setContent(html_212eb2b2e87d4f499d17537868f685db);
+        
+
+        circle_marker_0fc3862240d94cc09d4c6e3fa78ba0a6.bindPopup(popup_f98188f138a74d52afcfe38304dc9062)
+        ;
+
+        
+    
+    
+            var circle_marker_dc710196b2e74117bdd2675ac6215288 = L.circleMarker(
+                [37.5798988, -119.0510025],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_a3206b78a32545cfaffae7cdd2a3ba73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c326e595cf12429b90a0543da4e70a54 = $(`<div id="html_c326e595cf12429b90a0543da4e70a54" style="width: 100.0%; height: 100.0%;">Name= Red Cones   Status= Radiocarbon</div>`)[0];
+            popup_a3206b78a32545cfaffae7cdd2a3ba73.setContent(html_c326e595cf12429b90a0543da4e70a54);
+        
+
+        circle_marker_dc710196b2e74117bdd2675ac6215288.bindPopup(popup_a3206b78a32545cfaffae7cdd2a3ba73)
+        ;
+
+        
+    
+    
+            var circle_marker_26fa63a594734cdfac31b50065517024 = L.circleMarker(
+                [37.0199013, -117.4509964],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_de74629855bd4f48bd056bcdb86134d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10cc0b16573c4344b241f8693adfe0ac = $(`<div id="html_10cc0b16573c4344b241f8693adfe0ac" style="width: 100.0%; height: 100.0%;">Name= Ubehebe Craters   Status= Anthropology</div>`)[0];
+            popup_de74629855bd4f48bd056bcdb86134d2.setContent(html_10cc0b16573c4344b241f8693adfe0ac);
+        
+
+        circle_marker_26fa63a594734cdfac31b50065517024.bindPopup(popup_de74629855bd4f48bd056bcdb86134d2)
+        ;
+
+        
+    
+    
+            var circle_marker_7ddbabb9ed6a49f6b531068bef20ff54 = L.circleMarker(
+                [37.5800018, -112.6709976],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_7c33c3fd4c6b48028f0ef2ccc129dc15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec8d6157b92f4bb88d22e782ff10844f = $(`<div id="html_ec8d6157b92f4bb88d22e782ff10844f" style="width: 100.0%; height: 100.0%;">Name= Markagunt Plateau   Status= Dendrochronology</div>`)[0];
+            popup_7c33c3fd4c6b48028f0ef2ccc129dc15.setContent(html_ec8d6157b92f4bb88d22e782ff10844f);
+        
+
+        circle_marker_7ddbabb9ed6a49f6b531068bef20ff54.bindPopup(popup_7c33c3fd4c6b48028f0ef2ccc129dc15)
+        ;
+
+        
+    
+    
+            var circle_marker_ba3bd8ad8a6a49408dda6102abd98da7 = L.circleMarker(
+                [37.257, -113.6210022],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_751c499090024d33a056cc508e19786f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a37584ec94944b48c068d4e31f19a11 = $(`<div id="html_8a37584ec94944b48c068d4e31f19a11" style="width: 100.0%; height: 100.0%;">Name= Santa Clara   Status= Holocene?</div>`)[0];
+            popup_751c499090024d33a056cc508e19786f.setContent(html_8a37584ec94944b48c068d4e31f19a11);
+        
+
+        circle_marker_ba3bd8ad8a6a49408dda6102abd98da7.bindPopup(popup_751c499090024d33a056cc508e19786f)
+        ;
+
+        
+    
+    
+            var circle_marker_3c3e19e79c9d40499930384a5e5c3870 = L.circleMarker(
+                [37.3279991, -112.401001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_db681b1851fd493bb9461d7b8d8b121f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc7ba45154b249ff8c73a403350dd8e0 = $(`<div id="html_dc7ba45154b249ff8c73a403350dd8e0" style="width: 100.0%; height: 100.0%;">Name= Bald Knoll   Status= Holocene</div>`)[0];
+            popup_db681b1851fd493bb9461d7b8d8b121f.setContent(html_dc7ba45154b249ff8c73a403350dd8e0);
+        
+
+        circle_marker_3c3e19e79c9d40499930384a5e5c3870.bindPopup(popup_db681b1851fd493bb9461d7b8d8b121f)
+        ;
+
+        
+    
+    
+            var circle_marker_418dd4910bc0484ebfef9e361a48a80f = L.circleMarker(
+                [36.3578987, -118.3209991],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_93e192a6790842b3a13243c06cc110d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a61c81a91103432b94c060051bf4a962 = $(`<div id="html_a61c81a91103432b94c060051bf4a962" style="width: 100.0%; height: 100.0%;">Name= Golden Trout Creek   Status= Tephrochronology</div>`)[0];
+            popup_93e192a6790842b3a13243c06cc110d3.setContent(html_a61c81a91103432b94c060051bf4a962);
+        
+
+        circle_marker_418dd4910bc0484ebfef9e361a48a80f.bindPopup(popup_93e192a6790842b3a13243c06cc110d3)
+        ;
+
+        
+    
+    
+            var circle_marker_4e4cbfd7e18444f0938de72ec8f66189 = L.circleMarker(
+                [36.0298996, -117.8209991],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_aa3009211d9f4591bc5980dc8062accd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f86d36150799497bbc9938274ce3d174 = $(`<div id="html_f86d36150799497bbc9938274ce3d174" style="width: 100.0%; height: 100.0%;">Name= Coso Volc Field   Status= Holocene?</div>`)[0];
+            popup_aa3009211d9f4591bc5980dc8062accd.setContent(html_f86d36150799497bbc9938274ce3d174);
+        
+
+        circle_marker_4e4cbfd7e18444f0938de72ec8f66189.bindPopup(popup_aa3009211d9f4591bc5980dc8062accd)
+        ;
+
+        
+    
+    
+            var circle_marker_c9c0ab8188174b08ac47ad50672d3e1b = L.circleMarker(
+                [36.3800011, -113.1309967],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_d52cb0e70e7e42e4a9a0356372a53b30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44d0ab5778df42edb92a46603845ec8a = $(`<div id="html_44d0ab5778df42edb92a46603845ec8a" style="width: 100.0%; height: 100.0%;">Name= Uinkaret Field   Status= Anthropology</div>`)[0];
+            popup_d52cb0e70e7e42e4a9a0356372a53b30.setContent(html_44d0ab5778df42edb92a46603845ec8a);
+        
+
+        circle_marker_c9c0ab8188174b08ac47ad50672d3e1b.bindPopup(popup_d52cb0e70e7e42e4a9a0356372a53b30)
+        ;
+
+        
+    
+    
+            var circle_marker_c765f414fee7475b835ed5f76c6a71a6 = L.circleMarker(
+                [34.75, -116.6210022],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_8971c607a22a40acb43943c68e2832db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59e93c09dd4c41628a98c9030cb67e59 = $(`<div id="html_59e93c09dd4c41628a98c9030cb67e59" style="width: 100.0%; height: 100.0%;">Name= Lavic Lake   Status= Holocene?</div>`)[0];
+            popup_8971c607a22a40acb43943c68e2832db.setContent(html_59e93c09dd4c41628a98c9030cb67e59);
+        
+
+        circle_marker_c765f414fee7475b835ed5f76c6a71a6.bindPopup(popup_8971c607a22a40acb43943c68e2832db)
+        ;
+
+        
+    
+    
+            var circle_marker_7be6bb2c02cc4b12af08b4a775285095 = L.circleMarker(
+                [35.8699989, -106.5709991],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_99ba036c5cab4db38a76ea4292a8de7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_638b5bb2c7b0475caafea66b884510c6 = $(`<div id="html_638b5bb2c7b0475caafea66b884510c6" style="width: 100.0%; height: 100.0%;">Name= Valles Caldera   Status= Pleistocene-Fumarolic</div>`)[0];
+            popup_99ba036c5cab4db38a76ea4292a8de7e.setContent(html_638b5bb2c7b0475caafea66b884510c6);
+        
+
+        circle_marker_7be6bb2c02cc4b12af08b4a775285095.bindPopup(popup_99ba036c5cab4db38a76ea4292a8de7e)
+        ;
+
+        
+    
+    
+            var circle_marker_6432b27778f74ee4aeca6e42bcf22264 = L.circleMarker(
+                [35.3699989, -111.5009995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_b3eb2540a9d14d6ab0cd3f0d1a548925 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0853a2cef6994dddbe9c11e9985b75e1 = $(`<div id="html_0853a2cef6994dddbe9c11e9985b75e1" style="width: 100.0%; height: 100.0%;">Name= Sunset Crater   Status= Dendrochronology</div>`)[0];
+            popup_b3eb2540a9d14d6ab0cd3f0d1a548925.setContent(html_0853a2cef6994dddbe9c11e9985b75e1);
+        
+
+        circle_marker_6432b27778f74ee4aeca6e42bcf22264.bindPopup(popup_b3eb2540a9d14d6ab0cd3f0d1a548925)
+        ;
+
+        
+    
+    
+            var circle_marker_f5728c00aad74f2daea868e61bf62f25 = L.circleMarker(
+                [34.5499992, -115.7809982],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_99aaba8b60414df7b69c21c6cb74cdc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10a59310ed394f6c95aaff934897acaf = $(`<div id="html_10a59310ed394f6c95aaff934897acaf" style="width: 100.0%; height: 100.0%;">Name= Amboy   Status= Holocene</div>`)[0];
+            popup_99aaba8b60414df7b69c21c6cb74cdc7.setContent(html_10a59310ed394f6c95aaff934897acaf);
+        
+
+        circle_marker_f5728c00aad74f2daea868e61bf62f25.bindPopup(popup_99aaba8b60414df7b69c21c6cb74cdc7)
+        ;
+
+        
+    
+    
+            var circle_marker_79879d94a4b44d8bad15e6a8a018bcd1 = L.circleMarker(
+                [34.7999992, -108.0009995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_127184467bd2429da93b16e7351fac19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_864b1090393c4dd682130544c9187e7d = $(`<div id="html_864b1090393c4dd682130544c9187e7d" style="width: 100.0%; height: 100.0%;">Name= Zuni-Bandera   Status= Anthropology</div>`)[0];
+            popup_127184467bd2429da93b16e7351fac19.setContent(html_864b1090393c4dd682130544c9187e7d);
+        
+
+        circle_marker_79879d94a4b44d8bad15e6a8a018bcd1.bindPopup(popup_127184467bd2429da93b16e7351fac19)
+        ;
+
+        
+    
+    
+            var circle_marker_ba4d5f905ea840519cad74b8e2bedc00 = L.circleMarker(
+                [33.7801018, -105.9309998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff51d5a6b2de463e9e03c9ff7b322edf);
+        
+    
+        var popup_009df00c17a54d8ea0ab89dc1d8716a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_940f0c24025e49efb8fd85b4552523aa = $(`<div id="html_940f0c24025e49efb8fd85b4552523aa" style="width: 100.0%; height: 100.0%;">Name= Carrizozo   Status= Holocene</div>`)[0];
+            popup_009df00c17a54d8ea0ab89dc1d8716a4.setContent(html_940f0c24025e49efb8fd85b4552523aa);
+        
+
+        circle_marker_ba4d5f905ea840519cad74b8e2bedc00.bindPopup(popup_009df00c17a54d8ea0ab89dc1d8716a4)
+        ;
+
+        
+    
+</script>
