@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+  rel="stylesheet"
+/>
+</head>
+<body>
+        <nav class="zone green" id="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    <div class="red"  id="welcome-section">
+        <h1>Hey I am Mert</h1>
+        <p>a web developer</p>
+    </div>
+    <section id="projects" class="blue projects-section">
+        <h2 class="projects-section-header">These are some of my projects</h2>
+        <div class="zone grid-wrapper" id="portfolio">
+            <a
+                href="https://codepen.io/mertwithamouth/pen/LYRwxrO"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://i.pinimg.com/originals/0a/e2/b4/0ae2b4a2fd6512bff7d9b5068a5aace7.jpg"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a
+                href="https://codepen.io/mertwithamouth/pen/LYRwxrO"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://i.pinimg.com/originals/2c/a9/89/2ca989d35d042036ec5890b55b2dbdb7.gif"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a
+                href="https://codepen.io/mertwithamouth/pen/LYRwxrO"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://64.media.tumblr.com/bee5209182c128ef50635574fb24aabe/tumblr_pwni3w0F2Z1rn9vd4o4_400.gifv"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a
+                href="https://codepen.io/mertwithamouth/pen/LYRwxrO"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://riotfest.org/wp-content/uploads/2017/09/fb_header-3.jpg"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a
+                href="https://codepen.io/mertwithamouth/pen/LYRwxrO"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://24.media.tumblr.com/2e5a679025ad08286890f6cdd0bbd2af/tumblr_mvyavg3OK11s1s0xao1_500.jpg"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a
+                href="https://codepen.io/mertwithamouth/pen/LYRwxrO"
+                target="_blank"
+                class="project project-tile"
+                >
+                <img
+                    class="project-image"
+                    src="https://i.ytimg.com/vi/RMtjMB0msw8/hqdefault.jpg"
+                    alt="project"
+                />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+          <h2>Let's work together...</h2>
+          <p>How do you take your coffee?</p>
+        </div>
+        <div class="contact-links">
+          <a
+            href="https://www.reddit.com/user/rclank93"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-reddit"></i> Reddit</a
+          >
+          <a
+            id="profile-link"
+            href="https://github.com/mertwithamouth"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          <a
+            href="https://twitter.com/Lmao"
+            target="_blank"
+            class="btn contact-details"
+            ><i class="fab fa-twitter"></i> Twitter</a
+          >
+          <a href="mailto:example@example.com" class="btn contact-details"
+            ><i class="fas fa-at"></i> Send a mail</a
+          >
+          <a href="tel:555-555-5555" class="btn contact-details"
+            ><i class="fas fa-mobile-alt"></i> Call me</a
+          >
+        </div>
+      </section>
+    
+      
+</body>
+</html>

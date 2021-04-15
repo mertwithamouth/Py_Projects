@@ -1,0 +1,29 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+html,body{
+    background-color: rgb(224, 221, 217);
+    margin: 0;
+    width: 100%;
+}
+.card>img{
+    height: 600px;
+}
+.card{
+    height: 100vh;
+}
+
+nav{
+    margin: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.card-title{
+    color: rgb(114, 4, 37);
+}
+
+
