@@ -1,18 +1,20 @@
 from tkinter import *
 import sqlite3
 from PIL import ImageTk, Image
-import backend
+from backend import Database
 import requests
+
+database=Database("books.db")
 
 
 def view():
-    for row in backend.view():
+    for row in database.view():
         list1.insert(END,row)
 
 
 def search():
     list1.delete(0,END)
-    for row in backend.search(title.get(),author.get(),year.get(),genre.get(),rate.get(),isbn.get()):
+    for row in database.search(title.get(),author.get(),year.get(),genre.get(),rate.get(),isbn.get()):
         list1.insert(END,row)
 
 def CurSelect(e):
@@ -58,17 +60,27 @@ def CurSelect(e):
     
 
 def delete():
-    backend.delete(selected_tuple[0])
+    database.delete(selected_tuple[0])
     list1.delete(0,END)
     view()
 
 def add():
-    backend.insert(title.get(),author.get(),year.get(),genre.get(),rate.get(),isbn.get(),img_url.get())
+    database.insert(title.get(),author.get(),year.get(),genre.get(),rate.get(),isbn.get(),img_url.get())
+
+    e1.delete(0,END)
+    e2.delete(0,END)
+    e3.delete(0,END)
+    e4.delete(0,END)
+    e5.delete(0,END)
+    e6.delete(0,END)
+    e7.delete(0,END)
+        
+
     list1.delete(0,END)
     view()
 
 def update():
-    backend.update(selected_tuple[0],title.get(),author.get(),year.get(),genre.get(),rate.get(),isbn.get(),img_url.get())
+    database.update(selected_tuple[0],title.get(),author.get(),year.get(),genre.get(),rate.get(),isbn.get(),img_url.get())
     list1.delete(0,END)
     view()
 
